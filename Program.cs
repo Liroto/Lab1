@@ -177,7 +177,7 @@ namespace Lab1
             }
             else
             {
-                result = Math.Pow(Math.Sin(Math.Pow(x * x + a, 2)), 3) - Math.Sqrt(x / b);
+                result = Math.Pow(Math.Sin(Math.Pow(Math.Pow(x,2) + a, 2)), 3) - Math.Sqrt(x / b);
                 Console.WriteLine($"y = {result}");
             }
 
