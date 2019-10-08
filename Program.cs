@@ -13,13 +13,13 @@ namespace Lab1
             /*Console.WriteLine("Введите действительное число: [x,xxx]");
             float x = float.Parse(Console.ReadLine());
             int d = (int)(x * 10) % 10;
-            Console.WriteLine(d); 1-я задача*/
+            Console.WriteLine(d); //1-я задача*/
 
             /*Console.WriteLine("Введите кол-во секунд");
             int sec = int.Parse(Console.ReadLine());
             int hours = sec / 3600;
             int minutes = (sec - hours * 3600)/60;
-            Console.WriteLine("Прошло "+hours+" часов "+minutes+" минут."); 2-я задача*/
+            Console.WriteLine("Прошло "+hours+" часов "+minutes+" минут."); //2-я задача*/
 
             /*Console.WriteLine("Введите время в формате ЧЧ:ММ:СС");
             Console.Write("12>Часы: ");
@@ -30,7 +30,7 @@ namespace Lab1
             int seconds = int.Parse(Console.ReadLine());
             int deg = hours * 3600 + minutes * 60 + seconds;
             double angle = deg * 0.0083;
-            Console.WriteLine("В " + hours + ":" + minutes + ":" + seconds + " угол часовой стрелки относительно полуночи составлял " + angle + " градусов."); 3-я задача*/
+            Console.WriteLine("В " + hours + ":" + minutes + ":" + seconds + " угол часовой стрелки относительно полуночи составлял " + angle + " градусов."); //3-я задача*/
 
             /*int a = 5;
             int b = 8;
@@ -38,7 +38,7 @@ namespace Lab1
             b -= a;//-5
             a += b;//8
             b *= -1;//5
-            Console.WriteLine(a+" "+b); 4-я задача*/
+            Console.WriteLine(a+" "+b); //4-я задача*/
 
             /*Console.Write("Введите 1-й катет: ");
             int a = int.Parse(Console.ReadLine());
@@ -46,7 +46,7 @@ namespace Lab1
             int b = int.Parse(Console.ReadLine());
             int sum = a * a + b * b;
             int c = Convert.ToInt32(Math.Sqrt(sum));
-            Console.WriteLine(c); 5-я задача*/
+            Console.WriteLine(c); //5-я задача*/
 
 
             /*int a, b, c, d;
@@ -59,7 +59,7 @@ namespace Lab1
                 c = (num / 100) % 10;
                 d = num / 1000;
                 Console.WriteLine(a*b*c*d);
-            } 6-я задача*/
+            } //6-я задача*/
 
             /*int a, b, c;
             Console.Write("Введите 3х значное число: ");
@@ -71,12 +71,12 @@ namespace Lab1
                 c = num % 10 * 100;
                 int reversed = a + b + c;
                 Console.WriteLine(reversed);
-            } 7-я задача*/
+            } //7-я задача*/
 
             /*Console.Write("Введите число: ");
             int x = int.Parse(Console.ReadLine());
             int result = 7+x*(-1+x*(2+x*(-5+3*x)));
-            Console.WriteLine(result); 8-я задача*/
+            Console.WriteLine(result); //8-я задача*/
 
             /*int a1, a2, a3, b1, b2, b3, c1, c2, c3, d1, d2, d3;
             float delta, deltaX, deltaY, deltaZ, mainX, mainY, mainZ;
@@ -108,43 +108,61 @@ namespace Lab1
 
                 Console.Write($"Ответ системы уравнений:x={mainX};y={mainY};z={mainZ}\n");
             }
-            else { Console.WriteLine("Определитель матрицы равен 0,решение невозможно"); } 9-я задача*/
-
-            /*string[,] tab = { { "Вид транспорта", "Номер маршрута", "Протяж.маршрута(км)", "Время в дороге(мин)" }, { "5", "6", "7", "8" }, { "9", "10", "11", "12" }, { "13", "14", "15", "16" } };
-            Console.WriteLine("Необходимые данные: Тр(трамвай);Тс(троллейбус);А(автобус)\n12;17;12a \n27,55;13,6;57,3;\n75;57;117");
-            for (int i = 1; i < 4; i++)
-            {
-                Console.Write("Введите вид транспорта: ");
-                tab[i, 0] = Console.ReadLine();
-            }
-            for (int i = 1; i < 4; i++)
-            {
-                Console.Write("Введите номер маршрута: ");
-                tab[i, 1] = Console.ReadLine();
-            }
-            for (int i = 1; i < 4; i++)
-            {
-                Console.Write("Введите протяж.маршрута: ");
-                tab[i, 2] = Console.ReadLine();
-            }
-            for (int i = 1; i < 4; i++)
-            {
-                Console.Write("Введите время в дороге: ");
-                tab[i, 3] = Console.ReadLine();
-            }
-            Console.WriteLine("Данные обрабатываются...\n\n\n");
-            Console.WriteLine("Общественный транспорт\n______________________________________________________________________");
-            Console.WriteLine("|" + tab[0, 0] + "|" + tab[0, 1] + "|" + tab[0, 2] + "|" + tab[0, 3] + "|");
-            Console.WriteLine("______________________________________________________________________");
-            Console.WriteLine("|" + tab[1, 0] + "|" + tab[1, 1] + "|" + tab[1, 2] + "|" + tab[1, 3] + "|");
-            Console.WriteLine("______________________________________________________________________");
-            Console.WriteLine("|" + tab[2, 0] + "|" + tab[2, 1] + "|" + tab[2, 2] + "|" + tab[2, 3] + "|");
-            Console.WriteLine("______________________________________________________________________");
-            Console.WriteLine("|" + tab[3, 0] + "|" + tab[3, 1] + "|" + tab[3, 2] + "|" + tab[3, 3] + "|");
-            Console.WriteLine("______________________________________________________________________");
-            Console.WriteLine("|Перечисляемый тип: Тр-трамвай, Тс-тролейбус, А - автобус|"); 1-я индивидуальная задача*/
+            else { Console.WriteLine("Определитель матрицы равен 0,решение невозможно"); } //9-я задача*/
 
 
+
+
+            /*Console.WriteLine("Необходимые данные:\nТр;Тс;А\n12;17;12a\n27,55;13,6;57,3;\n75;57;117");
+            string top = "Общественный транспорт";
+            string bot = "Перечисляемый тип: Тр - трамвай, Тс - троллейбус, А - автобус";
+            string[] basic = {"Вид транспорта","№ маршрута","Протяженность маршрута(км)","Время в дороге(мин)"};
+            int route_num1, route_num2, travel_time1, travel_time2, travel_time3;
+            string route_num3,vehicle_type1, vehicle_type2, vehicle_type3;
+            float lenght1, lenght2, lenght3;
+
+            Console.Write($"Введите {1}й вид транспорта: ");
+            vehicle_type1 = Console.ReadLine();
+            Console.Write("Введите номер маршрута: ");
+            route_num1 = int.Parse(Console.ReadLine());
+            Console.Write("Введите протяженность маршрута: ");
+            lenght1 = float.Parse(Console.ReadLine());
+            Console.Write("Введте длительность поездки: ");
+            travel_time1 = int.Parse(Console.ReadLine());
+
+            Console.Write($"Введите {2}й вид транспорта: ");
+            vehicle_type2 = Console.ReadLine();
+            Console.Write("Введите номер маршрута: ");
+            route_num2 = int.Parse(Console.ReadLine());
+            Console.Write("Введите протяженность маршрута: ");
+            lenght2 = float.Parse(Console.ReadLine());
+            Console.Write("Введте длительность поездки: ");
+            travel_time2 = int.Parse(Console.ReadLine());
+
+            Console.Write($"Введите {3}й вид транспорта: ");
+            vehicle_type3 = Console.ReadLine();
+            Console.Write("Введите номер маршрута: ");
+            route_num3 = Console.ReadLine();
+            Console.Write("Введите протяженность маршрута: ");
+            lenght3 = float.Parse(Console.ReadLine());
+            Console.Write("Введте длительность поездки: ");
+            travel_time3 = int.Parse(Console.ReadLine());
+
+            string repeat = new String('_', 108);
+
+            Console.WriteLine($"\n\n\n{top}");
+            Console.WriteLine(repeat);
+            for (int i = 0; i < basic.Length; i++) {
+                Console.Write($"{basic[i], -26}|");
+            }
+            Console.WriteLine($"\n{repeat}");
+            Console.WriteLine($"{vehicle_type1,-26}|{route_num1,-26}|{lenght1,-26}|{travel_time1,-26}|");
+            Console.WriteLine(repeat);
+            Console.WriteLine($"{vehicle_type2,-26}|{route_num2,-26}|{lenght2,-26}|{travel_time2,-26}|");
+            Console.WriteLine(repeat);
+            Console.WriteLine($"{vehicle_type3,-26}|{route_num3,-26}|{lenght3,-26}|{travel_time3,-26}|");
+            Console.WriteLine(repeat);
+            Console.WriteLine(bot); //1-я индивидуальная задача*/
 
 
             /*Console.WriteLine("Для уравнений \ny = (sin^3)*((x^2)+a)^2 - √x/b\nz = x^2/a + cos(x+b)^3\nВведите значения a,b,x");
@@ -171,7 +189,7 @@ namespace Lab1
             {
                 result = x * x / a + Math.Cos(Math.Pow(x + b, 3));
                 Console.WriteLine($"z = {result}");
-            }2-я индивидуальная задача*/
+            } //2-я индивидуальная задача*/
 
         }
     }       
